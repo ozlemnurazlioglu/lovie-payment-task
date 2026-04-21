@@ -45,6 +45,29 @@ with Incoming / Outgoing tabs, status filter, and search.
 
 ---
 
+## Demo videos
+
+Auto-recorded by the Playwright E2E suite (`video: 'on'`) while driving a real
+Chromium browser — every test produces a `.webm`. Each video below covers one
+functional requirement end-to-end.
+
+| # | Flow | Asserts (spec ref) | Video |
+| - | ---- | ------------------ | ----- |
+| 1 | A signs in and creates a $25 request for B | FR-1, FR-4, FR-5 | [`docs/videos/01-create-request.webm`](docs/videos/01-create-request.webm) |
+| 2 | Guest sees read-only public view of the share link | FR-11 | [`docs/videos/02-guest-view-public-link.webm`](docs/videos/02-guest-view-public-link.webm) |
+| 3 | B signs in via the share link and pays — shows the 2-second processing animation | FR-8, FR-12 | [`docs/videos/03-recipient-pays-2s-processing.webm`](docs/videos/03-recipient-pays-2s-processing.webm) |
+| 4 | A's outgoing tab flips to `paid` | FR-6 | [`docs/videos/04-sender-sees-paid.webm`](docs/videos/04-sender-sees-paid.webm) |
+| 5 | Decline flow — A creates a fresh request | FR-1 | [`docs/videos/05-decline-flow-create.webm`](docs/videos/05-decline-flow-create.webm) |
+| 6 | Decline flow — B declines | FR-9 | [`docs/videos/06-decline-flow-decline.webm`](docs/videos/06-decline-flow-decline.webm) |
+| 7 | Cancel flow — A creates and cancels | FR-10 | [`docs/videos/07-cancel-flow.webm`](docs/videos/07-cancel-flow.webm) |
+| 8 | Validation — self-request blocked with clear error | FR-2 | [`docs/videos/08-self-request-blocked.webm`](docs/videos/08-self-request-blocked.webm) |
+
+Each clip is 2–15 s, ≤ 230 KB. Regenerate by running
+`npx playwright test` — the suite writes fresh `.webm` + `trace.zip` to
+`test-results/` and an HTML report to `playwright-report/`.
+
+---
+
 ## Tech stack
 
 | Layer         | Choice                                                      |
