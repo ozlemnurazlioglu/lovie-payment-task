@@ -5,6 +5,7 @@ A peer-to-peer payment request app (Venmo-style) built with a fully
 Next.js 14 App Router, Supabase (Postgres + RLS), Tailwind, and Playwright.
 
 - **Live demo:** <https://lovie-payment-task-seven.vercel.app>
+- **Video walkthrough (YouTube):** <https://youtu.be/BJ8Zk-rdv3E>
 - **Repo:** <https://github.com/ozlemnurazlioglu/lovie-payment-task>
 - **Assignment brief:** [`assignment.md`](./assignment.md)
 - **Constitution (5 non-negotiable fintech principles):** [`.specify/memory/constitution.md`](./.specify/memory/constitution.md)
