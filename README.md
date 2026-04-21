@@ -42,6 +42,8 @@ with Incoming / Outgoing tabs, status filter, and search.
 | Public pay link (recipient)       | ![](docs/screenshots/06-public-pay-recipient.png)      |
 | Paid                              | ![](docs/screenshots/07-request-paid.png)              |
 | Dashboard with paid filter        | ![](docs/screenshots/08-dashboard-paid-filter.png)     |
+| Mobile — dashboard (390 × 844)    | ![](docs/screenshots/09-mobile-dashboard.png)          |
+| Mobile — request detail           | ![](docs/screenshots/10-mobile-detail.png)             |
 
 ---
 
