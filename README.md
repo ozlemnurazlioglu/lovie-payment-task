@@ -86,7 +86,7 @@ Each clip is 2–15 s, ≤ 230 KB. Regenerate by running
 
 ## Spec-driven workflow
 
-The build followed an 8-step workflow (see [`doc-video.md`](./doc-video.md)):
+The build followed an 8-step workflow:
 
 1. **MCP stack** — confirm Supabase, Playwright, Context7, GitHub, Vercel MCPs are connected.
 2. **Setup** — scaffold Spec-Kit dirs + `.claude/settings.json` hooks
@@ -165,8 +165,7 @@ Open <http://localhost:3000>.
 
 The two test users are created via SQL (not GoTrue signup) to avoid
 rate-limited magic-link flows. See the DO block in
-[`supabase-schema.sql`](./supabase-schema.sql) or the `Step 5` sub-action in
-[`doc-video.md`](./doc-video.md):
+[`supabase-schema.sql`](./supabase-schema.sql):
 
 ```
 ozlemnurnazlioglu2002@gmail.com   /   test123
