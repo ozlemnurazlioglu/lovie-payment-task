@@ -4,7 +4,7 @@ A peer-to-peer payment request app (Venmo-style) built with a fully
 **AI-native, spec-driven** workflow using [GitHub Spec-Kit](https://github.com/github/spec-kit),
 Next.js 14 App Router, Supabase (Postgres + RLS), Tailwind, and Playwright.
 
-- **Live demo:** _to be added after deploy_
+- **Live demo:** <https://lovie-payment-task-seven.vercel.app>
 - **Repo:** <https://github.com/ozlemnurazlioglu/lovie-payment-task>
 - **Assignment brief:** [`assignment.md`](./assignment.md)
 - **Constitution (5 non-negotiable fintech principles):** [`.specify/memory/constitution.md`](./.specify/memory/constitution.md)
