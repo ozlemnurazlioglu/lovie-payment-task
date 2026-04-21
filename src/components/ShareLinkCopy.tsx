@@ -19,8 +19,9 @@ export function ShareLinkCopy({ url }: { url: string }) {
   return (
     <div className="flex items-center gap-2 rounded-lg border border-border bg-muted/40 p-2">
       <code
-        className="flex-1 truncate px-2 text-xs text-muted-foreground"
+        className="block min-w-0 flex-1 truncate px-2 font-mono text-xs text-muted-foreground"
         data-testid="share-link-url"
+        title={url}
       >
         {url}
       </code>

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { headers } from 'next/headers';
 import { ArrowLeft } from 'lucide-react';
 import { AmountDisplay } from '@/components/AmountDisplay';
 import { StatusBadge } from '@/components/StatusBadge';
@@ -78,7 +79,14 @@ export default async function RequestDetailPage({
   const counterpartyLabel = isSender ? 'To' : 'From';
   const counterpartyEmail = isSender ? r.recipient_email : r.sender_email;
 
-  const shareBase = process.env.NEXT_PUBLIC_APP_URL ?? '';
+  // Build the share URL from request headers so it is always absolute
+  // regardless of env-var state. Falls back to NEXT_PUBLIC_APP_URL if set
+  // (trimmed to defend against accidental trailing whitespace/newlines).
+  const h = headers();
+  const envBase = process.env.NEXT_PUBLIC_APP_URL?.trim();
+  const host = h.get('x-forwarded-host') ?? h.get('host') ?? 'localhost:3000';
+  const proto = h.get('x-forwarded-proto') ?? 'https';
+  const shareBase = envBase && envBase.length > 0 ? envBase : `${proto}://${host}`;
   const shareUrl = `${shareBase}/pay/${r.shareable_link}`;
 
   const isExpired =
