@@ -1,22 +1,3 @@
-# PayRequest — Project Instructions for Claude Code
-
-## ⚠️ Authoritative Workflow — `doc-video.md`
-
-- `doc-video.md` is the **authoritative step-by-step workflow script** for this project. It is no longer confidential — read it, follow it, and execute against it.
-- Two rules from `doc-video.md` are **hard constraints** and override any instinct to be efficient:
-  1. **One step at a time.** Execute exactly one step, then STOP and ask `"Step X is complete. Shall I proceed to Step X+1?"`. Never chain steps.
-  2. **Explain every step in English before executing it.** Output a short English block covering (1) What the step does, (2) Why it matters, (3) Which tools/files/commands will be touched — regardless of the chat language. Only after that, run the tool calls. After execution, summarize the result in English and stop.
-- The 8 canonical steps are:
-  1. Intro: the MCP stack
-  2. Project setup: Spec-Kit, Supabase MCP, hooks
-  3. Spec writing: constitution, spec, plan, tasks
-  4. Database via Supabase MCP
-  5. Auth (email + password)
-  6. Feature build: API routes + UI
-  7. Playwright MCP + automated E2E tests
-  8. Final: E2E run, screenshots, Vercel deploy, README
-- If the user's request maps to one of these steps, follow that step's action list in `doc-video.md` exactly.
-
 ## Project Overview
 
 P2P payment request app (like Venmo). Users create, pay, decline, and cancel payment requests.
